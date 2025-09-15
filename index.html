@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>قصيدة - العرب بين الحاضر و الماضي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#d4a017;
+      --muted:#cbd5e1;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Cairo,'Amiri',serif;
+      background:linear-gradient(180deg,var(--bg) 0%,#071026 60%);
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      scroll-behavior:smooth;
+    }
+    .container{
+      max-width:920px;
+      margin:40px auto;
+      padding:28px;
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.015));
+      border-radius:14px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.7);
+      border:1px solid rgba(255,255,255,0.03);
+      overflow:hidden;
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .profile-pic{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      border:3px solid var(--accent);
+      object-fit:cover;
+      box-shadow:0 4px 15px rgba(0,0,0,0.6);
+    }
+    h1{
+      margin:0;
+      font-family:Amiri,'Cairo';
+      font-size:30px;
+      color:white;
+      transition:color 0.4s;
+    }
+    h1:hover{color:var(--accent);}
+    p.lead{
+      margin:8px 0 18px;
+      color:#dbeafe;
+    }
+    .poem{
+      background:linear-gradient(180deg,rgba(0,0,0,0.22),rgba(255,255,255,0.01));
+      padding:22px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.03);
+      line-height:2.05;
+      font-size:20px;
+    }
+    .poem .stanza{
+      margin-bottom:18px;
+      opacity:0;
+      transform:translateY(30px);
+      transition:all 0.8s ease;
+    }
+    .poem .stanza.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+    .poem .stanza:hover{color:var(--accent);}
+    .poem strong{color:var(--accent);font-weight:700}
+    .flags{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+    .flag-card{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      padding:8px;
+      background:rgba(255,255,255,0.02);
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.02);
+      transition:transform 0.3s;
+      opacity:0;
+      transform:translateY(30px);
+    }
+    .flag-card.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+    .flag-card:hover{transform:scale(1.05);}
+    .flag-card img{
+      width:46px;
+      height:30px;
+      object-fit:cover;
+      border-radius:4px;
+      box-shadow:0 2px 8px rgba(2,6,23,0.6);
+    }
+    .flag-card .name{font-size:14px;color:#e6eef8}
+    .footer{
+      margin-top:30px;
+      font-size:14px;
+      color:#98a8c4;
+      text-align:center;
+      font-style:italic;
+    }
+    @media(max-width:520px){.poem{font-size:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://i.postimg.cc/cC7BJQnC/Snapchat-622102577-1.png" alt="صورة الشاعر" class="profile-pic">
+      <div>
+        <h1>العرب بين الحاضر و الماضي</h1>
+        <p class="lead">بقلم الشاعر يحيى حسين أحمد</p>
+      </div>
+    </header>
+    <main>
+      <section class="poem" id="poem">
+        <div class="stanza">يا أُمّةً شادَت الأمجادَ وارتفعتْ<br>كالبدرِ يَسطعُ في ليلٍ وأهوالِ</div>
+        <div class="stanza">كنتِ العروبةَ في عليائِها وهجًا<br>يُهدي الشعوبَ سَنا المجدِ والأبطالِ</div>
+        <div class="stanza">مضتْ جيوشُكِ تجتاحُ الدجى فلقًا<br>فتنحني الأرضُ إعظامًا لأجيالِ</div>
+        <div class="stanza">واليومَ أبكيكِ يا أُمّي وقد غَدَتِ الـ<br>ـحدودُ جدرانَ فصلٍ بين أوصالِ</div>
+        <div class="stanza">أصبحْتِ شيعًا، وكنّا أمةً اجتمعتْ<br>على الهدى، فاستبدّتْ فرقةُ البالِ</div>
+        <div class="stanza"><strong>أما القدسُ؟ آهٍ للقدسِ من دمِها</strong><br>تَروي الحجارةَ في صمتٍ وإهمالِ</div>
+        <div class="stanza">مجازرٌ لو رأتْها العينُ لانكسرتْ<br>ولانثنى القلبُ في حزنٍ وأوجالِ</div>
+        <div class="stanza">تصرخُ الأقصى: "أما من أُمّةٍ اتحدتْ؟<br>أما من السيفِ يُنهي جُرحَ أهوالِي؟"</div>
+        <div class="stanza">فانهضوا يا عربًا، فالجرحُ يجمعُنا<br>لا تُبقوا البأسَ ممزوقًا بأغلالِ</div>
+        <div class="stanza">ووحّدوا الصفَّ، إن المجدَ يُنقِذُكم<br>من أن تكونوا غثاءً بين أذيالِ</div>
+      </section>
+
+      <section style="margin-top:18px">
+        <h3 style="color:#fff;margin:6px 0">أعلام الدول العربية</h3>
+        <div class="flags">
+          <div class="flag-card"><img src="https://flagcdn.com/w80/dz.png"><div class="name">الجزائر</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/bh.png"><div class="name">البحرين</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/km.png"><div class="name">جزر القمر</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/dj.png"><div class="name">جيبوتي</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/eg.png"><div class="name">مصر</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/iq.png"><div class="name">العراق</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/jo.png"><div class="name">الأردن</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/kw.png"><div class="name">الكويت</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/lb.png"><div class="name">لبنان</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/ly.png"><div class="name">ليبيا</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/mr.png"><div class="name">موريتانيا</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/ma.png"><div class="name">المغرب</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/om.png"><div class="name">عُمان</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/ps.png"><div class="name">فلسطين</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/qa.png"><div class="name">قطر</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/sa.png"><div class="name">السعودية</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/so.png"><div class="name">الصومال</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/sd.png"><div class="name">السودان</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/sy.png"><div class="name">سوريا</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/tn.png"><div class="name">تونس</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/ae.png"><div class="name">الإمارات</div></div>
+          <div class="flag-card"><img src="https://flagcdn.com/w80/ye.png"><div class="name">اليمن</div></div>
+        </div>
+      </section>
+
+      <div class="footer">بقلم الشاعر يحيى حسين أحمد</div>
+    </main>
+  </div>
+
+  <script>
+    // Scroll animation for stanzas & flags
+    const observer = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    },{threshold:0.1});
+    document.querySelectorAll('.stanza,.flag-card').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
